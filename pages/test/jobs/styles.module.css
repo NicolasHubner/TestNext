@@ -1,0 +1,109 @@
+.SectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container that had the 2 buttons from the aplication  */
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* Button CSS */
+
+.ButtonContainer {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+  padding: 0px 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.Button {
+  background-color: whitesmoke;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  outline: 0;
+  cursor:pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  border: 1px solid black;
+}
+.Button:hover{
+  box-shadow: 1px 1px 2px black;
+}
+
+/* Container CSS */
+.ContainerJobs {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* Cards CSS */
+.Card {
+  background-color: rgb(226, 226, 226);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-around;
+  /* height: 20px */
+}
+.Card:hover {
+  box-shadow: 1px 1px 10px black;
+}
+.TitleContainer {
+  display: flex;
+  flex-direction: column;
+  /* height:50px; */
+  margin-bottom: 5px;
+}
+.levels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.SalaryDate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Loader CSS, using when the page is loading */
+
+.Loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 100px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
